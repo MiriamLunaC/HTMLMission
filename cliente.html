@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <title>Cliente</title>
+    </head>
+    <body>
+        <img src="MLPASTELES.png" width="10%" height="10%" id="logo">
+        <a href="index.html">
+        <img src="logout.png" width="2.5%" height="2.5%" id="logout" onclick="alert('Sesión cerrada')" ></a>
+        <label id="usuario">Cliente</label>
+        <br><br><br><br><br><br><br>
+        <h3>Conoce nuestros sabores y su costo</h3>
+        <table id="sabores">
+            <tr>
+                <th>Sabores de pastel</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Vainilla</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Limón</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Zanahoria</td>
+                <td>$180</td>
+            </tr>
+            <tr>
+                <td>Naranja</td>
+                <td>$180</td>
+            </tr>
+            <tr>
+                <td>Fresa</td>
+                <td>$200</td>
+            </tr>
+        </table>
+
+        <br><br>
+        <h3>También conoce los adornos y su precio</h3>
+        <table id="adornos">
+            <tr>
+                <th>Adornos</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Flores</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Cruz</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Unicornios</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Números (cumpleaños o aniversario)</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td>$130</td>
+            </tr>
+            <tr>
+                <td>Balón (futbol, basquetbol o beisbol)</td>
+                <td>$230</td>
+            </tr>
+            <tr>
+                <td>Consola de x-box</td>
+                <td>$300</td>
+            </tr>
+        </table>
+
+        <br>        
+        <h3>Formulario para hacer el pedido</h3>
+        <label>Nombre</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label>Teléfono</label><br>
+        <input type="tel" id="telefono" name="telefono"><br><br>
+
+        <label>Correo electrónico</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Descripción general del pastel</label><br>
+        <textarea placeholder="Escribe aquí como desea el pastel de manera general" id="descripcion" name="descripcion"></textarea><br><br>
+
+        <!--Sabores-->
+        <label>Selecciona los sabores del pastel</label><br>
+        <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+        <label for="topping1">Chocolate</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Vainilla">
+        <label for="topping2">Vainilla</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Limón">
+        <label for="topping3">Limón</label><br>
+        <input type="checkbox" id="topping4" name="topping4" value="Zanahoria">
+        <label for="topping4">Zanahoria</label><br>
+        <input type="checkbox" id="topping5" name="topping5" value="Naranja">
+        <label for="topping5">Naranja</label><br>
+        <input type="checkbox" id="topping6" name="topping6" value="Fresa">
+        <label for="topping6">Fresa</label><br><br>
+
+        <!--Adornos-->
+        <label>Selecciona los adornos del pastel</label><br>
+        <input type="checkbox" id="check1" name="check1" value="Flores">
+        <label for="check1">Flores</label><br>
+        <input type="checkbox" id="check2" name="check2" value="Cruz">
+        <label for="check2">Cruz</label><br>
+        <input type="checkbox" id="check3" name="check3" value="Unicornios">
+        <label for="check3">Unicornios</label><br>
+        <input type="checkbox" id="check4" name="check4" value="Números">
+        <label for="check4">Números</label><br>
+        <input type="checkbox" id="check5" name="check5" value="Nombre">
+        <label for="check5">Nombre</label><br>
+        <input type="checkbox" id="check6" name="check6" value="Balón">
+        <label for="check6">Balón</label><br>
+        <input type="checkbox" id="check7" name="check7" value="Consola de X-BOX">
+        <label for="check7">Consola de X-BOX</label><br><br>
+
+        <input type="submit" onclick="alert('Pedido enviado');" id="enviar" name="enviar">
+
+    </body>
+    <footer>
+        <br><br>
+        <label>Dirección: Av Himno Nacional 770, Cuitlahuac, San Luis, S.L.P.</label><br>
+        <label>Teléfono: 444 238 4309</label><br>
+        <label>Horario: Lunes a viernes de 12pm a 8pm, Sábados y Domingos de 10am a 6pm</label><br><br><br><br>
+    </footer>
+</html>
